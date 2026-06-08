@@ -2,6 +2,14 @@
 
 A FastAPI application that lets users upload PDFs, indexes their text in Pinecone with Gemini embeddings, and answers questions using retrieved context with source citations.
 
+## Output
+
+Upload a PDF, ask a question, and get an answer with cited source chunks from the document.
+
+![RAG Document Q&A output](docs/output.png)
+
+**Example:** After uploading `Resume_0106.pdf`, the app answers *"he is good at problem solving or not rate him out of 10"* with a detailed rating and source previews from the resume.
+
 ## Tech Stack
 
 - Python
@@ -116,3 +124,4 @@ Content-Type: application/json
 6. User questions are embedded and matched against the most relevant chunks.
 7. Retrieved chunks are passed to the chat model.
 8. The response returns an answer plus source previews.
+image.png\\
