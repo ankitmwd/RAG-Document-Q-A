@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RAG Document Q&A</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="workspace">
+        <header>
+          <p class="eyebrow">Document intelligence</p>
+          <h1>RAG Document Q&A</h1>
+        </header>
+
+        <div class="panel">
+          <label for="pdf">Upload PDF</label>
+          <div class="upload-row">
+            <input id="pdf" type="file" accept="application/pdf" />
+            <button id="uploadBtn">Upload</button>
+          </div>
+          <p id="uploadStatus" class="status">No document uploaded yet.</p>
+        </div>
+
+        <div class="panel">
+          <label for="question">Ask a question</label>
+          <textarea id="question" rows="4" placeholder="What is this document about?"></textarea>
+          <button id="askBtn">Ask</button>
+        </div>
+      </section>
+
+      <section class="results">
+        <h2>Answer</h2>
+        <div id="answer" class="answer">Upload a PDF and ask a question to see an answer here.</div>
+        <h2>Sources</h2>
+        <div id="sources" class="sources"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
