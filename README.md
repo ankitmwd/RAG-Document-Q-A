@@ -49,9 +49,7 @@ pip install -r requirements.txt
 
 Create your environment file:
 
-```bash
-cp .env.example .env
-```
+
 
 Fill in:
 
